@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>In App Template: {{ object.title }}</h1>
+<h3>
+    {% if object.description != None and object.description != '' %}
+    {{ object.description }}
+    {% else %}
+    Description: Coming Soon!
+    {% endif %}
+</h3>
+<p>Price: <em>$ {{ object.price }}</em></p>
+<a href="{{ object.get_absolute_url }}/delete">Delete this product</a>
+{% endblock %}
