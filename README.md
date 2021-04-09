@@ -10,12 +10,12 @@ thisismysecretkey
 
 Then type the following in your terminal in the root directory of the app:
 
-### Installing dependencies and Creating Virtual Env
+### Creating Virtual Env and Installing Dependencies
 
 ```bash
 pip install pipenv
-pipenv install django
 pipenv shell
+pipenv install
 ```
 
 ### Creating pre-run setup:
